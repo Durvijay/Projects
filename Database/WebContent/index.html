@@ -1,0 +1,220 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Truck Rental On The Way</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript">
+	 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+</script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.1.min.js">
+	
+</script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		
+		
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1000);
+		});
+	});
+
+	function validate() {
+
+		if (document.forms["Login"]["userName"].value == "") {
+			alert("Please provide your username !!");
+
+			return false;
+		}
+
+		if (document.forms["Login"]["password"].value == "") {
+			alert("Please provide your password !!");
+
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body class="banner">
+	<!-- banner -->
+	<div >
+		<!-- container -->
+		<div class="container">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">Truck Rental On The Way</a>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+			<div class="top-nav">
+				<span class="menu">MENU</span>
+				<ul class="nav1">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="#news" class="scroll">News</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+					$("span.menu").click(function() {
+						$("ul.nav1").slideToggle(300, function() {
+
+						});
+					});
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+		</div>
+		<!-- //container -->
+		<div class="banner-text">
+			<!-- container -->
+			<div class="container">
+				<ul>
+					<li>09-45 Mary Road , London , J-9 09SD</li>
+					<li><a href="mailto:example@email.com">E-mail :
+							example@mail.com</a></li>
+				</ul>
+			</div>
+			<!-- //container -->
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- banner-bottom -->
+	<div class="banner-top-slide">
+		<div class="banner-bottom-top">
+			<h4>Sign In</h4>
+
+		</div>
+		<div class="banner-bottom-bottom">
+			<div class="banner-top-slide-grids">
+				<script src="js/responsiveslides.min.js"></script>
+				<script>
+					// You can also use "$(window).load(function() {"
+					$(function() {
+						// Slideshow 4
+						$("#slider3")
+								.responsiveSlides(
+										{
+											auto : true,
+											pager : true,
+											nav : false,
+											speed : 500,
+											namespace : "callbacks",
+											before : function() {
+												$('.events')
+														.append(
+																"<li>before event fired.</li>");
+											},
+											after : function() {
+												$('.events')
+														.append(
+																"<li>after event fired.</li>");
+											}
+										});
+
+					});
+				</script>
+
+				<div id="top" class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li>
+							<div class="banner-slid">
+
+								<form name="Login" action="login_check.action">
+									User Name: <input type="text" name="userName" id="UserName" required><br>
+									<br> &nbsp;&nbsp;&nbsp;password: <input type="password"
+										name="password" id="UserName" required><br>
+									<br>
+									<br> <input type="submit" name="Submit" value="Submit">
+									___________________________________________________________ <br>
+									<br> <a href="SignUpPage.jsp">Sign Up &raquo;</a>
+
+
+								</form>
+
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner-bottom -->
+	<!---728x90--->
+	<!-- welcome -->
+	<div class="welcome">
+		<!-- container -->
+		<div class="container">
+			<div class="welcome-info">
+				<h3>Hello there!</h3>
+				<h5>Welcome to our travel site</h5>
+				<h4>It gets Easy when you Rent Truck on the Way.</h4>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //welcome -->
+	<!---728x90--->
+	<!-- banner-bottom -->
+	<!---728x90--->
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="col-md-6 footer-left">
+				<h3>Get in touch</h3>
+				<form>
+					<input type="text" placeholder="Email" required> <input
+						type="submit" value="Subscribe">
+				</form>
+			</div>
+			<div class="col-md-3 footer-middle">
+				<h3>Address</h3>
+				<div class="address">
+					<p>
+						756 gt globel Place, <span>CD-Road,M 07 435.</span>
+					</p>
+				</div>
+				<div class="phone">
+					<p>+1(100)2345-6789</p>
+				</div>
+			</div>
+			<div class="col-md-3 footer-right">
+				<div class="f-logo">
+					<a href="index.html">Transit</a>
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+	<!-- copyright -->
+	<div class="copyright">
+		<!-- container -->
+		<div class="container">
+			<div class="copyright-left">
+				<p>
+					Copyright © 2015 Transit. All rights reserved | Design by <a
+						href="http://w3layouts.com">W3layouts</a>
+				</p>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- copyright -->
+</body>
+</html>
+
